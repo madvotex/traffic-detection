@@ -1,10 +1,10 @@
-# 🚦 Traffic Situation Prediction using Random Forest
+#  Traffic Situation Prediction using Random Forest
 
 This project uses machine learning to predict traffic situations (e.g., heavy, moderate, or light) based on vehicle counts and time-based features using a Random Forest Classifier.
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 The dataset used is `TrafficTwoMonth.csv`, which includes:
 - Vehicle counts: `CarCount`, `BikeCount`, `BusCount`, `TruckCount`, `Total`
@@ -13,7 +13,7 @@ The dataset used is `TrafficTwoMonth.csv`, which includes:
 
 ---
 
-## 🧼 Data Preprocessing
+##  Data Preprocessing
 
 1. Combined `Date` and `Time` into a full datetime object.
 2. Extracted datetime features: `hour`, `day`, `month`, `weekday`.
@@ -24,7 +24,7 @@ The dataset used is `TrafficTwoMonth.csv`, which includes:
 
 ---
 
-## 🎯 Model
+##  Model
 
 - **Model Used:** Random Forest Classifier
 - **Hyperparameter Tuning:** GridSearchCV
@@ -40,7 +40,7 @@ The dataset used is `TrafficTwoMonth.csv`, which includes:
 
 ---
 
-## 📊 Visualizations
+##  Visualizations
 
 - **Class Distribution Plot:** Distribution of traffic situations in the dataset.
 - **Confusion Matrix Heatmap:** Performance visualization of the model.
@@ -48,7 +48,7 @@ The dataset used is `TrafficTwoMonth.csv`, which includes:
 
 ---
 
-## 🏁 Results
+##  Results
 
 - Best model is saved as `best_random_forest_model.pkl` using `joblib`.
 - Sample inference is demonstrated using a single row from the validation set.
